@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Save the Child</title>
+  <!-- All pages use the same CSS file. -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Website name -->
+  <header>
+    <h1>Save the Child</h1>
+    <p>A brighter future for every child</p>
+  </header>
+
+  <!-- Links to the separate HTML pages -->
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="partnership.html">Partnership</a>
+    <a href="members.html">Members</a>
+    <a href="contact.html">Contact</a>
+    <a href="donate.html" class="active" aria-current="page">Donate</a>
+  </nav>
+
+  <!-- This is the content of the Donate page. -->
+  <main>
+    <h2>Support a Programme</h2>
+    <img class="photo" src="images/early-years-play.jpg"
+         alt="A young child playing with a colourful toy train">
+    <p>Thank you for wanting to help children.</p>
+    <p>This is a practice pledge form. No money is collected
+       and no information is sent or saved.</p>
+
+    <form onsubmit="showPledgeMessage(event)">
+      <label for="donor-name">Your name</label>
+      <input id="donor-name" name="name" type="text" required>
+
+      <label for="programme">Choose a programme</label>
+      <select id="programme" name="programme">
+        <option>Education</option>
+        <option>Health and Nutrition</option>
+        <option>Child Protection</option>
+        <option>Emergency Support</option>
+      </select>
+
+      <label for="amount">Pledge amount in SLE</label>
+      <input id="amount" name="amount" type="number" min="1" required>
+
+      <button type="submit">Test Pledge Form</button>
+      <p id="pledge-result" class="result" role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Save the Child | Student website concept</p>
+    <p><a href="photo-credits.html">Photo credits</a></p>
+  </footer>
+</body>
+</html>

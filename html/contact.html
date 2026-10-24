@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Save the Child</title>
+  <!-- All pages use the same CSS file. -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Website name -->
+  <header>
+    <h1>Save the Child</h1>
+    <p>A brighter future for every child</p>
+  </header>
+
+  <!-- Links to the separate HTML pages -->
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="partnership.html">Partnership</a>
+    <a href="members.html">Members</a>
+    <a href="contact.html" class="active" aria-current="page">Contact</a>
+    <a href="donate.html">Donate</a>
+  </nav>
+
+  <!-- This is the content of the Contact Us page. -->
+  <main>
+    <h2>Contact Us</h2>
+    <p>Ask a question about a programme or a partnership.</p>
+    <p>This practice form displays a message on the page.
+       It does not send an email or save your details.</p>
+
+    <!-- The browser checks required fields before running the JavaScript. -->
+    <form onsubmit="showContactMessage(event)">
+      <label for="full-name">Full name</label>
+      <input id="full-name" name="name" type="text" required>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option>General enquiry</option>
+        <option>Education</option>
+        <option>Partnership</option>
+        <option>Volunteering</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Test Enquiry Form</button>
+      <p id="contact-result" class="result" role="status"></p>
+    </form>
+
+    <h2>Contact Details</h2>
+    <p>Email: To be confirmed</p>
+    <p>Phone: To be confirmed</p>
+    <p>Office location: To be confirmed</p>
+  </main>
+
+  <footer>
+    <p>Save the Child | Student website concept</p>
+    <p><a href="photo-credits.html">Photo credits</a></p>
+  </footer>
+</body>
+</html>

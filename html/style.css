@@ -1,0 +1,140 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #26362c;
+  background-color: #f2f5f0;
+}
+
+/* Green website header. */
+header {
+  background-color: #2f6645;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1, header p {
+  margin: 5px;
+}
+
+/* Links wrap onto another line on small screens. */
+nav {
+  background-color: #e1ebdf;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #214f32;
+}
+
+nav a:hover, nav a.active {
+  background-color: white;
+  font-weight: bold;
+}
+
+/* Main white content area. */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: white;
+}
+
+h2 {
+  color: #2f6645;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 736px;
+}
+
+.photo {
+  display: block;
+  width: 400px;
+}
+
+.box {
+  background-color: #f2f5f0;
+  border: 1px solid #d1dfce;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+/* A simple photo gallery. */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery figure {
+  width: 260px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.gallery img {
+  width: 260px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Contact and donation form fields. */
+form {
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9cae98;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+button, .button {
+  display: inline-block;
+  background-color: #2f6645;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 15px;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+}
+
+.result {
+  color: #214f32;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #2f6645;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: white;
+}
